@@ -14,7 +14,7 @@
     display: grid;
     min-height: 100vh;
     grid-template-columns: 350px 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
 
     grid-template-areas:
         "nav nav"
@@ -26,11 +26,13 @@
 nav {
     top: 0;
     padding: 20px;
-    position: sticky;
     grid-area: nav;
+    position: sticky;
     border-bottom: 1.5px solid rgba(68, 63, 63, 0.2);
     box-sizing: border-box;
+    background-color: white;
     width: auto;
+
 }
 
 aside {
@@ -38,6 +40,11 @@ aside {
     background-color: rgba(229, 207, 207, 0.2);
     display: flex;
     flex-direction: column;
+    align-self: start;
+    position: sticky;
+    height: cal(100vh - 81px);
+    top: 81px;
+    order: -1;
 
 }
 
@@ -146,7 +153,6 @@ footer {
     width: auto;
     padding: 10px;
     border-radius: 10px;
-
 }
 
 
@@ -178,7 +184,6 @@ footer {
 }
 
 .item_today_container:hover {
-    transform: scale();
     background-color: rgba(1, 150, 250, 0.2);
 }
 
@@ -226,7 +231,6 @@ footer {
 }
 
 .item_inbox_container:hover {
-    transform: scale();
     background-color: rgba(1, 150, 250, 0.2);
 }
 
