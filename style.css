@@ -414,6 +414,7 @@ footer {
 
 .main_content_view {
     padding: 25px;
+    margin-bottom: 40px;
     width: 100%;
     box-shadow: 0px 0.5px 7px -1px rgba(88, 84, 84, 0.226);
     box-sizing: border-box;
@@ -457,9 +458,21 @@ footer {
     gap: 2rem;
 }
 
-#nameTask{
+#nameTask {
     border: none;
     border-bottom: 1px solid rgb(141, 132, 132);
     width: 250px
-    
+}
+
+#duedate {
+    border: none;
+    border-bottom: 1px solid rgb(141, 132, 132);
+}
+
+.display_user_task {
+    height: 400px;
+    width: 100%;
+    box-shadow: 0px 0.5px 7px -1px rgba(88, 84, 84, 0.226);
+    box-sizing: border-box;
+    border-radius: 10px;
 }

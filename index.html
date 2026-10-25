@@ -120,8 +120,8 @@
             <section class="main_content">
                 <div class="main_content_view">
                     <div class="main_content_header">
-                        <h1 onclick="">Add a task</h1>
-                        <button class="mc_add_task">
+                        <h1 >Add a task</h1>
+                        <button onclick="get_user_input_task();" class="mc_add_task">
                             <span class="material-symbols-outlined">
                                 add
                             </span>
@@ -130,9 +130,16 @@
 
                     </div>
                     <div class="user_addtask_form">
-                        <input type="text" id= "nameTask" placeholder="What task needed to complete??">
-                        <input type="date" placeholder="Due date of task">
+                        <input type="text" id="nameTask" placeholder="What task needed to complete??">
+                        <input type="date" placeholder="Due date of task" id="duedate">
                         <textarea type="text" placeholder="Description of the task"></textarea>
+                    </div>
+
+
+                </div>
+                <div class="display_task_container">
+                    <div class = "display_user_task">
+
                     </div>
                 </div>
             </section>
@@ -142,7 +149,7 @@
         </footer>
     </div>
 
-    <script src="todo.js"></script>
+    <script src="/js/todo.js"></script>
 </body>
 
 </html>
