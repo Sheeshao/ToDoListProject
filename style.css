@@ -400,19 +400,19 @@ footer {
     font-size: 1.3rem;
 }
 
-.add_task span{
+.add_task span {
     font-size: 2.5rem;
-   
+
 }
 
 /* MAIN CONTENT NI ARI */
 
-.main_content{
+.main_content {
     margin: 40px;
-    
+
 }
 
-.main_content_view{
+.main_content_view {
     padding: 25px;
     width: 100%;
     box-shadow: 0px 0.5px 7px -1px rgba(88, 84, 84, 0.226);
@@ -424,27 +424,42 @@ footer {
 
 }
 
-.main_content_header{
+.main_content_header {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between
 }
 
-.mc_add_task{
+.mc_add_task {
     width: 100px;
     padding: 5px;
     border: none;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     background-color: #0196FA;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.mc_add_task:hover{
+.mc_add_task:hover {
     background-color: #0ea5e9;
+}
+
+/* USER FORM ADD TASK */
+.user_addtask_form {
+    display: flex;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+#nameTask{
+    border: none;
+    border-bottom: 1px solid rgb(141, 132, 132);
+    width: 250px
+    
 }
