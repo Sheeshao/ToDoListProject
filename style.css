@@ -1,5 +1,7 @@
 :root {
     font-size: 62.5%;
+    --primary-base: #0196FA;
+    --secondary-base: rgba(1, 150, 250, 0.294);
 }
 
 
@@ -107,7 +109,7 @@ footer {
     align-items: center;
     width: 30px;
     height: 30px;
-    background-color: #0196FA;
+    background-color: var(--primary-base);
 }
 
 .navigation_search img {
@@ -126,7 +128,7 @@ footer {
 
 .navigation_search input[type=text]:focus {
     border-style: solid;
-    border-color: #0196FA;
+    border-color: var(--primary-base);
 }
 
 /* ASIDE CONTENT*/
@@ -179,12 +181,12 @@ footer {
     height: 30px;
     width: 30px;
     border-radius: 100%;
-    background-color: rgba(1, 150, 250, 0.4);
+    background-color: var(--secondary-base);
     margin-left: auto;
 }
 
 .item_today_container:hover {
-    background-color: rgba(1, 150, 250, 0.2);
+    background-color: var(--secondary-base);
 }
 
 
@@ -226,12 +228,12 @@ footer {
     height: 30px;
     width: 30px;
     border-radius: 100%;
-    background-color: rgba(1, 150, 250, 0.4);
+    background-color: var(--secondary-base);
     margin-left: auto;
 }
 
 .item_inbox_container:hover {
-    background-color: rgba(1, 150, 250, 0.2);
+    background-color: var(--secondary-base);
 }
 
 /* item_upcoming */
@@ -272,12 +274,12 @@ footer {
     height: 30px;
     width: 30px;
     border-radius: 100%;
-    background-color: rgba(1, 150, 250, 0.4);
+    background-color: var(--secondary-base);
     margin-left: auto;
 }
 
 .item_upcoming_container:hover {
-    background-color: rgba(1, 150, 250, 0.2);
+    background-color: var(--secondary-base);
 }
 
 /* item_important */
@@ -318,12 +320,12 @@ footer {
     height: 30px;
     width: 30px;
     border-radius: 100%;
-    background-color: rgba(1, 150, 250, 0.4);
+    background-color: var(--secondary-base);
     margin-left: auto;
 }
 
 .item_important_container:hover {
-    background-color: rgba(1, 150, 250, 0.2);
+    background-color: var(--secondary-base);
 }
 
 
@@ -356,7 +358,7 @@ footer {
 
 
 .project_list_container li:hover {
-    background-color: rgba(1, 150, 250, 0.2);
+    background-color: var(--secondary-base);
 }
 
 
@@ -393,7 +395,7 @@ footer {
 }
 
 .add_task:hover {
-    background-color: rgba(1, 150, 250, 0.2);
+    background-color: var(--secondary-base);
 }
 
 .add_task h3 {
@@ -441,13 +443,13 @@ footer {
     align-items: center;
     justify-content: center;
 
-    background-color: #0196FA;
+    background-color: var(--primary-base);
     border-radius: 5px;
     cursor: pointer;
 }
 
 .mc_add_task:hover {
-    background-color: #0ea5e9;
+    background-color: var(--secondary-base);
 }
 
 /* USER FORM ADD TASK */
