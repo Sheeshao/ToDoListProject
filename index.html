@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrackMyProgess</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/css/base.css" <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
@@ -120,7 +120,7 @@
             <section class="main_content">
                 <div class="main_content_view">
                     <div class="main_content_header">
-                        <h1 >Add a task</h1>
+                        <h1>Add a task</h1>
                         <button onclick="get_user_input_task();" class="mc_add_task">
                             <span class="material-symbols-outlined">
                                 add
@@ -130,16 +130,32 @@
 
                     </div>
                     <div class="user_addtask_form">
-                        <input type="text" id="nameTask" placeholder="What task needed to complete??">
-                        <input type="date" placeholder="Due date of task" id="duedate">
+                        <form action="add_task_form">
+                            <input type="text" id="nameTask" placeholder="What task needed to complete??">
+                            <input type="date" placeholder="Due date of task" id="duedate">
+
+                            <label for="user_priority_task">Priority</label>
+                            <select name="priority_select" id="user_priority_task">
+                                <option value="HIGH">
+                                    <span>LOW</span>
+                                </option>
+                                <option value="MEDIUM">
+                                    <span>MEDIUM</span>
+                                </option>
+                                <option value="LOW">
+                                    <span>HIGH</span>
+                                </option>
+                            </select>
+                        </form>
+
                         <textarea type="text" placeholder="Description of the task"></textarea>
                     </div>
 
 
                 </div>
                 <div class="display_task_container">
-                    <div class = "display_user_task">
-                        
+                    <div class="display_user_task">
+
                     </div>
                 </div>
             </section>

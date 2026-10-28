@@ -3,27 +3,32 @@ let todoList_data = [];
 const user_input_task_field = document.querySelector("#nameTask");
 const user_input_date_field = document.querySelector("#duedate");
 const display_field_task = document.querySelector(".display_user_task");
+const user_priority_field = document.querySelector("#user_priority_task");
 
 
 function get_user_input_task() {
-    if (!user_input_date_field.value || !user_input_task_field) {
+    if (!user_input_date_field.value || !user_input_task_field.value) {
         return;
     }
 
     const task = user_input_task_field.value;
     const duedate = user_input_date_field.value;
+    const priority = user_priority_field.value;
 
     todoList_data.push(
         {
             taskName: task,
-            due: duedate
+            due: duedate,
+            priority: priority
         }
     )
+    
 
     display_added_task();
 
     user_input_date_field.value = "";
     user_input_task_field.value = "";
+    user_priority_field.value = "";
 
     console.log(todoList_data);
 }
@@ -35,11 +40,12 @@ function display_added_task() {
         const list_object = todoList_data[i];
         //console.log(`List object test: ${list_object}`)
 
-        const { taskName, due } = list_object;
+        const { taskName, due, priority } = list_object;
         const information = `
             <p>
                 <span>${taskName}</span>
                 <span>${due}</span>
+                <span>${priority}</span>
                     <button onclick = "
                         todoList_data.splice(${i}, 1);
                         display_added_task();

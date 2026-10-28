@@ -1,0 +1,12 @@
+:root {
+    font-size: 62.5%;
+    --primary-base: #0196FA;
+    --secondary-base: rgba(1, 150, 250, 0.294);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Google Sans", sans-serif;
+}
