@@ -3,7 +3,7 @@ let todoList_data = [];
 const user_input_task_field = document.querySelector("#nameTask");
 const user_input_date_field = document.querySelector("#duedate");
 const display_field_task = document.querySelector(".display_user_task");
-const user_priority_field = document.querySelector("#user_priority_task");
+const user_priority_field = document.querySelector(".user_priority_task_button");
 
 
 function get_user_input_task() {
@@ -22,7 +22,7 @@ function get_user_input_task() {
             priority: priority
         }
     )
-    
+
 
     display_added_task();
 

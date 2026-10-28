@@ -465,3 +465,49 @@ footer {
     border-radius: 10px;
 }
 
+/* form for adding a task */
+.user_addtask_form {
+    display: flex;
+    gap: 30px;
+}
+
+.user_addtask_form label {
+    font-size: 1.5rem;
+}
+
+.user_priority_task_button,
+.user_priority_task_button::picker(select) {
+    appearance: base-select;
+}
+
+.user_priority_task_button {
+    font-size: 1.5rem;
+    padding: 10px;
+    height: 40px;
+    width: 120px;
+    align-items: center;
+    justify-items: center;
+
+}
+
+/* the drop down menu */
+.user_priority_task_button::picker(select) {
+    background-color: white;
+}
+
+.user_priority_task_button option:hover {
+    background-color: var(--secondary-base);
+}
+
+selectedcontent {
+    display: flex;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+}
+
+textarea::placeholder{
+    text-align: center;
+}

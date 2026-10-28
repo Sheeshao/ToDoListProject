@@ -130,22 +130,31 @@
 
                     </div>
                     <div class="user_addtask_form">
-                        <form action="add_task_form">
+                        <form class="user_addtask_form">
                             <input type="text" id="nameTask" placeholder="What task needed to complete??">
                             <input type="date" placeholder="Due date of task" id="duedate">
 
-                            <label for="user_priority_task">Priority</label>
-                            <select name="priority_select" id="user_priority_task">
-                                <option value="HIGH">
-                                    <span>LOW</span>
-                                </option>
-                                <option value="MEDIUM">
-                                    <span>MEDIUM</span>
-                                </option>
-                                <option value="LOW">
-                                    <span>HIGH</span>
-                                </option>
-                            </select>
+                            <div>
+                                <label for="priority_select">Priority</label>
+                                <select name="priority_select" class="user_priority_task_button">
+
+                                    <button type="button" class="custom_selection">
+                                        <selectedcontent></selectedcontent>
+
+                                    </button>
+                                    <option value="HIGH">
+                                        <span>LOW</span>
+
+                                    </option>
+                                    <option value="MEDIUM">
+                                        <span>MEDIUM</span>
+                                    </option>
+                                    <option value="LOW">
+                                        <span>HIGH</span>
+                                    </option>
+                                </select>
+                            </div>
+
                         </form>
 
                         <textarea type="text" placeholder="Description of the task"></textarea>
