@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrackMyProgess</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/css/base.css" <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
@@ -135,7 +136,7 @@
                             <input type="date" placeholder="Due date of task" id="duedate">
 
                             <div>
-                                <label for="priority_select">Priority</label>
+                                <label for="priority_select" class="priority_label">Priority</label>
                                 <select name="priority_select" class="user_priority_task_button">
 
                                     <button type="button" class="custom_selection">
@@ -154,17 +155,18 @@
                                     </option>
                                 </select>
                             </div>
-
+                            <div class="description_area">
+                                <input type="checkbox" id="enable_description">
+                                <label for="enable_description">Enable description</label>
+                                <textarea type="text" placeholder="Description of the task"></textarea>
+                            </div>
                         </form>
-
-                        <textarea type="text" placeholder="Description of the task"></textarea>
                     </div>
 
 
                 </div>
                 <div class="display_task_container">
                     <div class="display_user_task">
-
                     </div>
                 </div>
             </section>

@@ -7,19 +7,24 @@ const user_priority_field = document.querySelector(".user_priority_task_button")
 
 
 function get_user_input_task() {
+    /*
     if (!user_input_date_field.value || !user_input_task_field.value) {
         return;
     }
-
+    */
     const task = user_input_task_field.value;
     const duedate = user_input_date_field.value;
     const priority = user_priority_field.value;
 
     todoList_data.push(
         {
-            taskName: task,
-            due: duedate,
-            priority: priority
+            //taskName: task,
+            //due: duedate,
+            //priority: priority
+
+            task,
+            duedate,
+            priority
         }
     )
 
@@ -28,7 +33,7 @@ function get_user_input_task() {
 
     user_input_date_field.value = "";
     user_input_task_field.value = "";
-    user_priority_field.value = "";
+    user_priority_field.value = "HIGH";
 
     console.log(todoList_data);
 }
@@ -40,16 +45,18 @@ function display_added_task() {
         const list_object = todoList_data[i];
         //console.log(`List object test: ${list_object}`)
 
-        const { taskName, due, priority } = list_object;
+        const { task, duedate, priority } = list_object;
         const information = `
             <p>
-                <span>${taskName}</span>
-                <span>${due}</span>
-                <span>${priority}</span>
-                    <button onclick = "
-                        todoList_data.splice(${i}, 1);
-                        display_added_task();
-                    ">DELETE</button>
+                <div class = display_generated_task>
+                    <span>${task}</span>
+                    <span>${duedate}</span>
+                    <span>${priority}</span>
+                        <button onclick = "
+                            todoList_data.splice(${i}, 1);
+                            display_added_task();
+                        ">DELETE</button>
+                </div>
             </p>
         `
         temp_storage += information

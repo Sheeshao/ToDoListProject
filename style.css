@@ -458,7 +458,9 @@ footer {
 }
 
 .display_user_task {
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     width: 100%;
     box-shadow: 0px 0.5px 7px -1px rgba(88, 84, 84, 0.226);
     box-sizing: border-box;
@@ -472,7 +474,8 @@ footer {
 }
 
 .user_addtask_form label {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    margin-right: 5px;
 }
 
 .user_priority_task_button,
@@ -492,7 +495,12 @@ footer {
 
 /* the drop down menu */
 .user_priority_task_button::picker(select) {
+
     background-color: white;
+    border: 1px;
+    box-shadow: 0px 0.5px 7px -1px rgba(88, 84, 84, 0.226);
+    border-radius: 10px;
+
 }
 
 .user_priority_task_button option:hover {
@@ -508,6 +516,23 @@ selectedcontent {
     width: 50px;
 }
 
-textarea::placeholder{
+textarea::placeholder {
     text-align: center;
+}
+
+
+
+.description_area {
+    display: flex;
+    align-items: center;
+}
+
+/* DESIGN OF THE GENERATED TO DO TASKS */
+
+.display_generated_task {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 50px;
+    align-items: center;
+    height: 50px;
 }
