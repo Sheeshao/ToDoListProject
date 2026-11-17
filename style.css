@@ -460,7 +460,7 @@ footer {
 .display_user_task {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 300px;
     width: 100%;
     box-shadow: 0px 0.5px 7px -1px rgba(88, 84, 84, 0.226);
     box-sizing: border-box;
